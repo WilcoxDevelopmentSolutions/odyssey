@@ -6,5 +6,6 @@ sudo yum install -y epel-release
 sudo yum install -y python-pip
 sudo pip install docker-compose
 sudo yum upgrade -y python*
+echo "cd /vagrant" >> /home/vagrant/.bashrc
 
 echo "Finished... "
