@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     rsync__exclude: [".git/"]
   config.vm.network "public_network"
 
-  config.vm.provision "shell", path: "./provisioning_scripts/setup.sh"
+  config.vm.provision "shell", path: "./dev-scripts/vagrant_setup.sh"
 
   config.vm.provider "virtualbox" do |vb|
   #   # Customize the amount of memory on the VM:
