@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Application Setup
 
-Things you may want to cover:
+We've provided a Docker environment for development. It's suggested you use that
 
-* Ruby version
+## Helper scripts
 
-* System dependencies
+We have several helper scripts to help you run or access the Docker based development environment.
 
-* Configuration
 
-* Database creation
+1. dev-scripts/start_env.sh : starts the Docker containers required
+2. dev-scripts/ssh_env.sh : lets you SSH into your Docker development container
+3. dev-scripts/start_app.sh : launches both Rails AND webpack, as having both running at same time is required by webpacker.
+    
 
-* Database initialization
+# Philosophies
 
-* How to run the test suite
+  1. We prefer webpacker over Asset Pipeline. Webpack based solutions fit better with JS land in 2017
+  2. We prefer React as a front end framework, and MaterialUI as a framework over that
+  3. Because we prefer Webpacker, javascript lives in app/javascript/packs/...
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
