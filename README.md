@@ -12,7 +12,12 @@ We have several helper scripts to help you run or access the Docker based develo
 1. dev-scripts/start_env.sh : starts the Docker containers required
 2. dev-scripts/ssh_env.sh : lets you SSH into your Docker development container
 3. dev-scripts/start_app.sh : launches both Rails AND webpack, as having both running at same time is required by webpacker.
-    
+
+
+## Installing Required Packages
+
+    $ bundle install
+    $ yarn install
 
 # Philosophies
 
