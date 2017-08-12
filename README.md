@@ -21,4 +21,13 @@ We have several helper scripts to help you run or access the Docker based develo
   3. Because we prefer Webpacker, javascript lives in app/javascript/packs/...
 
 
+# Testing
+
+Tests for both Ruby and Javascript/React components live in `test/`:
+
+  * `test/spec` contain RSpec based Ruby tests
+  * `test/mocha` contain Mocha based Javascript tests
+
+Use `build-scripts/test.sh` to run the application's tests. (do not use `rake spec`)
+
 
