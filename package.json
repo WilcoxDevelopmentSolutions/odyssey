@@ -34,7 +34,9 @@
     "webpack-manifest-plugin": "^1.2.1",
     "webpack-merge": "^4.1.0",
     "material-ui": "^0.18.7",
-    "react-tap-event-plugin": "2.0.1"
+    "react-tap-event-plugin": "2.0.1",
+    "lodash": "4.17.4",
+    "webpacker-react": "^0.3.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.7.1"
