@@ -1,1 +1,2 @@
---require spec_helper
+--default_path=tests/spec --pattern "tests/spec/**/*_spec.rb" --require spec_helper
+

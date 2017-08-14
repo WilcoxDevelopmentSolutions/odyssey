@@ -1,0 +1,2 @@
+class UiComponentsController < ApplicationController
+end

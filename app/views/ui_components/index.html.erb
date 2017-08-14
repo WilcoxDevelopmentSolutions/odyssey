@@ -1,0 +1,36 @@
+<div>
+    <h1 class="hero" style="text-align: center">Design Style Guide for Odyssey</h1>
+    
+    <div class="container">
+        <ul>
+            <li>
+                <div>
+                    <h2>We use Webpacker for (React) Javascript, and Asset Pipeline for CSS</h2>
+                    <p>We shouldn't have Javascript living in two places, please do not put Javascript in app/assets/javascript</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>We use Webpacker-React to instantiate React components into our mostly server side rendered UI</h2>
+                    <p>Example:</p>
+                    <div class="panel">
+                        <%= react_component('LearningComponent', {displayName: "Odyssey"}) %>
+                    </div>
+                    <p><a href="https://github.com/WilcoxDevelopmentSolutions/odyssey/commit/3ec90893e66893">See how to hook this up on the React side</a>. See the source for this Rails view to see it in action on the Rails side.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>We use <a href="http://pinboard.in/u:rwilcox/t:css_flexbox">Flexbox</a> for CSS grid positioning.</h2>
+                    <p>Helpful CSS classes for this live in app/assets/stylesheets/flexbox_wrappers.css</p>
+                    <p>They are a work in progress, if you have a generic style to add please do</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>Our React components should use <a href="http://www.material-ui.com/#/">MaterialUI</a> containers for standard elements.</h2>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
