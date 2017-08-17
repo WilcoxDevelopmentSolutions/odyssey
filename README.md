@@ -15,6 +15,9 @@ We have several helper scripts to help you run or access the Docker based develo
 4. dev-scripts/vagrant_setup.sh : starts the docker daemon in the vagrant machine, runs with the vagrant provisioner. To run manually simply type `vagrant provision`
 
 ## Vagrant Setup
+
+This is mostly for when Docker doesn't work on your platform or hardware of choice. Normally you should run Docker directly on the physical hardware you have.
+
 * First `cd` into the projects root directory and run `vagrant up`. The first time you run this command may take a minute or two. 
 
 * When it's finished building the machine, run `vagrant ssh`. 
