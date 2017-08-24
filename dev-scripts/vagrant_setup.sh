@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 echo "running setup.sh"
+sudo setenforce 0
 sudo yum install docker -y
 sudo service docker start
 sudo yum install -y epel-release
