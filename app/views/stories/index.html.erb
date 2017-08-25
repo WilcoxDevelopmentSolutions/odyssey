@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Stories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>In order to</th>
+      <th>As</th>
+      <th>I want to</th>
+      <th>I do</th>
+      <th>This happens</th>
+      <th>Importance</th>
+      <th>Comments</th>
+      <th>Dev comments</th>
+      <th>Difficulty</th>
+      <th>Story kind</th>
+      <th>Author</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stories.each do |story| %>
+      <tr>
+        <td><%= story.in_order_to %></td>
+        <td><%= story.as %></td>
+        <td><%= story.i_want_to %></td>
+        <td><%= story.i_do %></td>
+        <td><%= story.this_happens %></td>
+        <td><%= story.importance %></td>
+        <td><%= story.comments %></td>
+        <td><%= story.dev_comments %></td>
+        <td><%= story.difficulty %></td>
+        <td><%= story.story_kind %></td>
+        <td><%= story.author %></td>
+        <td><%= link_to 'Show', story %></td>
+        <td><%= link_to 'Edit', edit_story_path(story) %></td>
+        <td><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Story', new_story_path %>
