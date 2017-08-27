@@ -1,4 +1,3 @@
 #!/bin/bash
 
-bin/webpack-dev-server &
-rails server
+foreman start -f Procfile.devel 
