@@ -1,0 +1,2 @@
+rails: PORT=3000 bundle exec rails server -b 0.0.0.0
+react: PORT=8080 bin/webpack-dev-server

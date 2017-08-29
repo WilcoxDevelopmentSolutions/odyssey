@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bundle exec rspec
+bundle exec rspec && npm test
