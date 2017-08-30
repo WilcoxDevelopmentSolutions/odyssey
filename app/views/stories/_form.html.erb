@@ -1,0 +1,72 @@
+<%= form_with(model: story, local: true) do |form| %>
+  <% if story.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+
+      <ul>
+      <% story.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :in_order_to %>
+    <%= form.text_area :in_order_to, id: :story_in_order_to %>
+  </div>
+
+  <div class="field">
+    <%= form.label :as %>
+    <%= form.text_field :as, id: :story_as %>
+  </div>
+
+  <div class="field">
+    <%= form.label :i_want_to %>
+    <%= form.text_area :i_want_to, id: :story_i_want_to %>
+  </div>
+
+  <div class="field">
+    <%= form.label :i_do %>
+    <%= form.text_area :i_do, id: :story_i_do %>
+  </div>
+
+  <div class="field">
+    <%= form.label :this_happens %>
+    <%= form.text_area :this_happens, id: :story_this_happens %>
+  </div>
+
+  <div class="field">
+    <%= form.label :importance %>
+    <%= form.number_field :importance, id: :story_importance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_area :comments, id: :story_comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dev_comments %>
+    <%= form.text_area :dev_comments, id: :story_dev_comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :difficulty %>
+    <%= form.number_field :difficulty, id: :story_difficulty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :story_kind %>
+    <%= form.number_field :story_kind, id: :story_story_kind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.number_field :author, id: :story_author %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

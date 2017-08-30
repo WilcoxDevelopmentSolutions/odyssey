@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>In order to:</strong>
+  <%= @story.in_order_to %>
+</p>
+
+<p>
+  <strong>As:</strong>
+  <%= @story.as %>
+</p>
+
+<p>
+  <strong>I want to:</strong>
+  <%= @story.i_want_to %>
+</p>
+
+<p>
+  <strong>I do:</strong>
+  <%= @story.i_do %>
+</p>
+
+<p>
+  <strong>This happens:</strong>
+  <%= @story.this_happens %>
+</p>
+
+<p>
+  <strong>Importance:</strong>
+  <%= @story.importance %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @story.comments %>
+</p>
+
+<p>
+  <strong>Dev comments:</strong>
+  <%= @story.dev_comments %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @story.difficulty %>
+</p>
+
+<p>
+  <strong>Story kind:</strong>
+  <%= @story.story_kind %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @story.author %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>
