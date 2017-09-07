@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :project %>
+    <%= collection_select(:project, :story_id, Story.all, :id, :in_order_to, prompt: true) %>
+  </div>
+
+  <div class="field">
     <%= form.label :in_order_to %>
     <%= form.text_area :in_order_to, id: :story_in_order_to %>
   </div>
