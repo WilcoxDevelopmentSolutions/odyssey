@@ -22,10 +22,10 @@ module Odyssey
   	  # tests that are rare enough we don't want to auto generate them... 
   	  g.view_specs       false
   	  g.helper_specs     false
-  	  g.routing-specs    false
+  	  g.routing_specs    false
   	  
   	  # TODO: think more about turning this off...
-  	  g.controller-specs false
+  	  g.controller_specs false
 	end
   end
 end
