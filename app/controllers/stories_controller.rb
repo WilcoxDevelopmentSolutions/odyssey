@@ -23,6 +23,7 @@ class StoriesController < ApplicationController
 
   # POST /stories
   # POST /stories.json
+  # TODO add association to a project based on route parameters 
   def create
     @story = Story.new(story_params)
 
