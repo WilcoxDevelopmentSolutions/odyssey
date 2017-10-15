@@ -1,0 +1,13 @@
+version: '2'
+services:
+  rails:
+    volumes:
+      - .:/app
+    build:
+      dockerfile: docker/odyssey/Dockerfile.devel
+      context: .
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=secretsecret
