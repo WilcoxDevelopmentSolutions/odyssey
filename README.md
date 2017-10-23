@@ -49,3 +49,10 @@ Tests for both Ruby and Javascript/React components live in `test/`:
 
 Use `build-scripts/test.sh` to run the application's tests. (do not use `rake spec`)
 
+# Deployment
+
+A CI/CD build pipeline should run `deploy-scripts/deploy.sh` with the currently desired deployment type. Thus, to deploy to AWS ECS, (first install the AWS CLI and ECS CLI, and get the profile stuff correct), then
+
+    $ deploy-scripts/deploy.sh aws_ecs
+    
+The name of the parameter is the name of the folder in deploy-scripts/
