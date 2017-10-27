@@ -11,22 +11,22 @@ import {
 } from 'material-ui/Table';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
-import ActionAndroid from 'material-ui/svg-icons/av/library-add';
+import Add from 'material-ui/svg-icons/av/library-add';
 
-class New_Project_Button extends React.Component {
+class NewProjectButton extends React.Component {
   render() {
       return <MuiThemeProvider>
 		<div>
 			  <RaisedButton
 			      href={this.props.link}
-			      label="New Project"
+			      label={this.props.label}
 			      primary={true}
 			      style={{margin: 12,}}
-      			  icon={<ActionAndroid />}
+      			  icon={<Add />}
 			    />
 		</div>
       </MuiThemeProvider>
   }
 }
 
-export default New_Project_Button
+export default NewProjectButton

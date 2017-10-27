@@ -10,7 +10,7 @@
 import WebpackerReact from 'webpacker-react'
 
 import LearningComponent from 'components/learning_component'
-import New_Project_Button from 'components/new_project_button'
+import NewProjectButton from 'components/new_project_button'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -18,7 +18,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-WebpackerReact.setup({LearningComponent, New_Project_Button})
+WebpackerReact.setup({LearningComponent, NewProjectButton})
     // when adding new component, add to this ES6 hash syntax
     // ie adding a FooBar component should make this line be
     // WebpackerReact.setup({LearningComponent, Foobar})
