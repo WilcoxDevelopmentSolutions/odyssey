@@ -8,6 +8,7 @@ phases:
       - pip install 'docker-compose==1.9.0'
   pre_build:
     commands:
+      - cp env.sample .env
       - docker-compose -f docker-compose-test.yml build
   build:
     commands:
