@@ -13,4 +13,4 @@ phases:
     commands:
       - docker-compose -f docker-compose-test.yml up -d postgres
       - sleep 5 # give postgres enough time to wake up. TODO: race condition...
-      - docker-compose -f docker-compose-test.yml run rails /bin/bash -c 'cd /app; ./buildspec.sh'
+      - docker-compose -f docker-compose-test.yml run rails /bin/bash -c 'cd /app; build-scripts/main.sh'
