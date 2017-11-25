@@ -4,6 +4,10 @@
 
 We've provided a Docker environment for development. It's suggested you use that
 
+## Environment Configuration
+
+Before you do anything run `bin/install.sh`. This will copy all the sample configuration files to where they should be, plus prompt you to (optionally) edit them.
+
 ## Helper scripts
 
 We have several helper scripts to help you run or access the Docker based development environment.
