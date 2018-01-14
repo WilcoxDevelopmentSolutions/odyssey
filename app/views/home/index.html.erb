@@ -1,3 +1,8 @@
 <H1>The Index Page / Dashboard</h1>
 
-<%= react_component('NewProjectButton', {link: new_project_path, label: "New Project"}) %>
+<% if current_user.present? %>
+    <%= render partial: 'home/index_current_user' %>
+<% else %>
+    <%= render partial: 'home/index_no_user' %>
+<% end %>
+
