@@ -39,7 +39,10 @@ This is mostly for when Docker doesn't work on your platform or hardware of choi
   2. We prefer React as a front end framework, and MaterialUI as a framework over that
   3. Because we prefer Webpacker, javascript lives in app/javascript/packs/...
 
+## Read more
 
+  * [Stylesheets](https://github.com/WilcoxDevelopmentSolutions/odyssey/tree/master/app/assets/stylesheets/README.md)
+ 
 # Testing
 
 Tests for both Ruby and Javascript/React components live in `test/`:
