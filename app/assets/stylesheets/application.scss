@@ -10,9 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+@import "flexbox_wrappers";
+@import "components/header";
+@import "projects";
+@import "scaffolds";
+@import "stories";
+@import "team_members";
+@import "users";
 
 body{
     padding: 10px;

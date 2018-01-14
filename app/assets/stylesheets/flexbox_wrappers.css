@@ -1,9 +1,0 @@
-.container {
- display: flex; 
- flex-flow: row wrap;
- justify-content: left;
-}
-
-.panel {
-  background-color: rgb(179, 202, 239);
-}

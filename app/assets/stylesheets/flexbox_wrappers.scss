@@ -1,0 +1,28 @@
+.container {
+ display: flex; 
+ flex-flow: row wrap;
+ justify-content: left;
+}
+
+@mixin rowMixin {
+
+  flex-direction: row;
+}
+
+.row {
+  @include rowMixin
+}
+
+@mixin panelMixin {
+
+  background-color: rgb(179, 202, 239);
+}
+
+.panel {
+  @include panelMixin;
+}
+
+
+.loginInfo {
+  font-size: large;
+}
