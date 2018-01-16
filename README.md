@@ -4,6 +4,10 @@
 
 We've provided a Docker environment for development. It's suggested you use that
 
+## Environment Configuration
+
+Before you do anything run `bin/install.sh`. This will copy all the sample configuration files to where they should be, plus prompt you to (optionally) edit them.
+
 ## Helper scripts
 
 We have several helper scripts to help you run or access the Docker based development environment.
@@ -54,5 +58,10 @@ Use `build-scripts/test.sh` to run the application's tests. (do not use `rake sp
 A CI/CD build pipeline should run `deploy-scripts/deploy.sh` with the currently desired deployment type. Thus, to deploy to AWS ECS, (first install the AWS CLI and ECS CLI, and get the profile stuff correct), then
 
     $ deploy-scripts/deploy.sh aws_ecs
-    
+
 The name of the parameter is the name of the folder in deploy-scripts/
+
+
+## Moving code from one environment to another
+
+Our strategy should be, "master can be released quickly", and roll backs should be possible.
