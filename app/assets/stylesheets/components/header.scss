@@ -1,0 +1,19 @@
+div.header {
+    @include panelMixin;
+    @include rowMixin;
+
+    border-bottom: thin black solid;
+    line-height: 40px;
+
+
+    .siteName {
+      font-size: x-large;
+      font-family: "Courier New"
+    }
+
+    .loginInfo {
+        position: absolute;
+        right: 5%;
+        font-size: large;
+    }
+}

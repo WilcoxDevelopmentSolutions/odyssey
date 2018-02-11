@@ -1,0 +1,10 @@
+<div class="header">
+    <span class="siteName">Odyssey: the place for stories</span>
+    <span class="loginInfo">
+        <% if user_signed_in? %>
+            <%= button_to( "Sign out", destroy_user_session_path(), method: :delete ) %>
+        <% else %>
+            <%= button_to "Sign in", new_user_session_path %>
+        <% end %>
+    </span>
+</div>

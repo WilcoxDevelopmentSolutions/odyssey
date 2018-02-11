@@ -42,7 +42,7 @@ RSpec.describe Project, type: :model do
     it "should not show team members that are Pending (Accepting the Invite)" do
       project = FactoryGirl.create :project_with_author
       project.invite_user( FactoryGirl.create(:user), :current )
-      project.invite_user( FactoryGirl.create(:user) )
+      project.invite_user( FactoryGirl.create(:user, email: 'second@example.com') )
 
       expect( project.current_users.length ).to eql(2)  # author + the one other
     end
@@ -51,7 +51,7 @@ RSpec.describe Project, type: :model do
     it "should not show disavowed team members" do
       project = FactoryGirl.create :project_with_author
       project.invite_user( FactoryGirl.create(:user), :current )
-      project.invite_user( FactoryGirl.create(:user), :disavowed )
+      project.invite_user( FactoryGirl.create(:user, email: 'bad@example.com'), :disavowed )
 
       expect( project.current_users.length ).to eql(2)  # author + the one other
     end    
