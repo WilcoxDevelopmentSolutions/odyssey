@@ -9,6 +9,7 @@ services:
     build:
       dockerfile: docker/odyssey/Dockerfile.devel
       context: .
+    env_file: .env
 
   postgres:
     image: postgres
